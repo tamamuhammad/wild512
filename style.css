@@ -1,0 +1,108 @@
+
+@font-face /*perintah untuk memanggil font eksternal*/
+{
+  font-family: 'Clear Sans'; /*memberikan nama bebas untuk font*/
+  src: url('ClearSans-Regular.ttf');/*memanggil file font eksternalnya di folder nexa*/
+}
+
+body {
+    background-color: wheat;
+    color: #776e65;
+    font-family: "Clear Sans", "Helvetica Neue";
+}
+
+.container {
+    display: flex;
+    width: 75vh;
+    flex-direction: column;
+    align-items: center;
+    margin: 5vh auto;
+    background-color: wheat;
+}
+
+.score-container{
+    background-color: rgb(245, 229, 201);
+    width: 85%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.score-title span {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    padding: 5px;
+    box-sizing: border-box;
+    gap: 5px;
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    background-color: #6a7665;
+    border-radius: 10px;
+}
+
+.grid div {
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1fr;
+    height: 1fr;
+    background-color: #eee4da59;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.button {
+    width: 85%;
+    display: none;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+
+button {
+    width: 25%;
+    border: 0px;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: 'Clear Sans';
+    font-weight: bold;
+}
+
+.atas {
+    background-color: rgb(128, 128, 250);
+}
+.kanan {
+    background-color: rgb(150, 255, 150);
+}
+.kiri {
+    background-color: rgb(255, 255, 150);
+}
+.bawah {
+    background-color: rgb(255, 155, 155);
+}
+
+@media (max-width: 768px){
+    .button {
+        display: flex;
+    }
+
+    .footer {
+        display:none;
+    }
+}
+

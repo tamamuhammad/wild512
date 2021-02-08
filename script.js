@@ -259,23 +259,23 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if (e.keyCode === 38) {
             keyDown();
         }
-
-        kiri.addEventListener('click', function () {
-            keyLeft();
-        })
-
-        kanan.addEventListener('click', function () {
-            keyRight();
-        })
-
-        atas.addEventListener('click', function () {
-            keyDown();
-        })
-
-        bawah.addEventListener('click', function () {
-            keyUp();
-        })
     }
+
+    kiri.addEventListener('click', function () {
+        keyLeft();
+    })
+
+    kanan.addEventListener('click', function () {
+        keyRight();
+    })
+
+    atas.addEventListener('click', function () {
+        keyDown();
+    })
+
+    bawah.addEventListener('click', function () {
+        keyUp();
+    })
 
     // KETIKA TOMBOL DITEKAN
     document.addEventListener('keyup', control);
